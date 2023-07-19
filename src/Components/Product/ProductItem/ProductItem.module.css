@@ -1,0 +1,12 @@
+.category {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: gray;
+}
+
+.btnGroup:hover {
+    border: 1px solid #705ef5 !important;
+    background: #705ef5 !important;
+    color: white;
+    transition: all 0.3s linear;
+}

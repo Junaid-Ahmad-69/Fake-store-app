@@ -1,0 +1,84 @@
+.latest {
+    position: relative;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.latest:after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    right: 0;
+    top: 20px;
+    background: #705ef5;
+    height: 2px;
+}
+
+.latest:before {
+    position: absolute;
+    content: "";
+    width: 20%;
+    left: 0;
+    top: 20px;
+    background: #705ef5;
+    height: 2px;
+}
+
+.filterBtn {
+    outline: none;
+    border: 1px solid #705ef5;
+    background: transparent;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: all 0.3s linear;
+    width: 120px;
+}
+
+.filterBtn:hover {
+    outline: none;
+    border: 1px solid #705ef5;
+    background: #705ef5;
+    color: white;
+
+}
+
+.activeFilter {
+    outline: none;
+    border: 1px solid #705ef5;
+    background: #705ef5;
+    color: white;
+    padding: 8px 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+    border-radius: 5px;
+    width: 120px;
+
+}
+.resetBtn {
+    outline: none;
+    border: 1px solid #705ef5;
+    background: transparent;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

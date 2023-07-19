@@ -1,0 +1,74 @@
+.stock-image {
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
+    object-fit: fill;
+}
+
+.link-center{
+    margin: 20px auto;
+}
+
+.cart-btn {
+    background-color: #705ef5 !important;
+    color: white !important;
+}
+
+.stocks-cards {
+    width: 18rem;
+    height: 480px !important;
+}
+
+.stock-icons {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.stock-icons button {
+    outline: none;
+    border: none;
+    background: #E91E63;
+    color: white;
+    width: 40px;
+    height: 40px;
+    transition: all linear 0.3s;
+    border-radius: 2px;
+
+}
+
+.stock-icons button svg {
+    font-size: 20px;
+}
+
+.stock-icons button:hover {
+    background: gray;
+}
+
+.stock-icons button:hover svg {
+    color: white;
+
+}
+
+.stocks-cards:hover .stock-icons {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-title {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+}
+
+
+.cart-btn:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+
+}

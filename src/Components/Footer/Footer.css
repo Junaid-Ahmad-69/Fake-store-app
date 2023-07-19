@@ -1,0 +1,41 @@
+.social-icons > button {
+    width: 35px;
+    height: 35px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons .facebook {
+    background: #3B5998;
+}
+
+.social-icons .facebook svg {
+    color: white;
+}
+
+.social-icons .insta {
+    background: #497299;
+}
+
+.social-icons .insta svg {
+    color: white;
+}
+
+.social-icons .twitter {
+    background: #55ACEE;
+}
+
+.social-icons .twitter svg {
+    color: white;
+}
+
+.social-icons .whatsapp {
+    background: #CB2027;
+}
+
+.social-icons .whatsapp svg {
+    color: white;
+}

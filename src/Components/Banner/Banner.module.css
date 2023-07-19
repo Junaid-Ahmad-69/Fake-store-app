@@ -1,0 +1,12 @@
+.bannerImage {
+    width: 100%;
+}
+
+.arrival {
+    position: absolute;
+    top: 30%;
+}
+
+.season {
+    font-size: 6rem
+}

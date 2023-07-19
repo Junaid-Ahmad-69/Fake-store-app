@@ -1,0 +1,20 @@
+.navbar-nav .nav-link.active{
+    color: #705ef5 !important;
+}
+.searchBtn {
+    border: 1px solid  #705ef5;
+    outline: none;
+    color: black !important;
+    border-radius:8px;
+    background: transparent;
+    transition: all 0.3s linear;
+    padding: 6px 16px;
+}
+
+.searchBtn:hover{
+    border: 1px solid  #705ef5;
+    outline: none;
+    color: white !important;
+    background: #705ef5;
+
+}
