@@ -1,21 +1,19 @@
-import React, {useState} from 'react'
 import "./LatestItem.css"
 import {CiEdit} from 'react-icons/ci';
 import {GoEye} from 'react-icons/go';
 import {Link} from "react-router-dom";
+import {useStore} from "../../../Context/Context";
 
 const LatestItem = ({stocks}) => {
-
-    const [item, setItem] = useState({});
-    const cartItems = {
-        id: stocks.id,
-        image: stocks.image,
-        title: stocks.title,
-    }
-
-    function sendData() {
-        setItem(cartItems)
-    }
+    const {getItems} = useStore()
+    const cartItems =
+        {
+            id: stocks.id,
+            image: stocks.image,
+            title: stocks.title,
+            price: stocks.price,
+            quantity: 1,
+        }
 
     return (
         <div className="card stocks-cards position-relative">
@@ -27,7 +25,7 @@ const LatestItem = ({stocks}) => {
                 <p className="card-title">{stocks.title}</p>
                 <p className="card-text text-decoration-none fw-bold fs-5"> $ {stocks.price}</p>
                 <button className="btn cart-btn" onClick={() => {
-                    sendData()
+                    getItems(cartItems)
                 }}>Add to Cart
                 </button>
             </div>

@@ -1,0 +1,32 @@
+.cart-container {
+    box-shadow: rgba(0, 0, 0, 0.02) 1px 3px, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 100px;
+    margin: 20px 0;
+}
+
+.cart-title {
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-quantity {
+    outline: none;
+    border: 1px solid black;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    border-radius: 6px;
+}
+.btn-quantity:hover{
+    background: #705ef5;
+    color: white;
+    border: 1px solid #705ef5;
+}

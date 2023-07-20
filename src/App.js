@@ -12,10 +12,8 @@ const App = () => {
             <StoreProvider>
                 <AppNav/>
                 <Routes>
-                    <Route>
                         <Route path='/' element={<HomePage/>}/>
                         <Route path='/product/:productId' element={<Product/>}/>
-                    </Route>
                 </Routes>
             </StoreProvider>
 

@@ -1,4 +1,4 @@
-.modalStyle{
+.modalStyle {
     position: fixed;
     height: 100%;
     top: 0;
@@ -8,14 +8,52 @@
     padding: 20px;
     z-index: 100;
     box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+    overflow: auto;
 }
 
-.overlay{
+.modalStyle::-webkit-scrollbar {
+    width: 10px;
+}
+
+.modalStyle::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.modalStyle::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.modalStyle::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+.overlay {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 100;
+}
+
+.close {
+    font-weight: bold;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 4px;
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.close:hover {
+    background: #705ef5;
+    color: white;
+    border: 1px solid #705ef5;
 }
