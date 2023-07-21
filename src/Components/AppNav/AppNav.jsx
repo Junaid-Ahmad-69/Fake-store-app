@@ -5,7 +5,7 @@ import {BsFillCartCheckFill} from "react-icons/bs";
 import {useStore} from "../../Context/Context";
 
 const AppNav = () => {
-    const {setIsOpen, uniqueData} = useStore()
+    const {dispatch, item} = useStore()
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-3">
             <div className="container">
@@ -37,8 +37,8 @@ const AppNav = () => {
                         <button className=" searchBtn">Login</button>
                         <button className=" searchBtn">Register</button>
                         <button className="searchBtn d-flex align-items-center justify-content-center gap-1"
-                                onClick={()=>setIsOpen(true)}
-                        ><BsFillCartCheckFill/> Cart({uniqueData.length})
+                                onClick={()=>dispatch({type: "toggle"})}
+                        ><BsFillCartCheckFill/> Cart({item.length})
                         </button>
                     </div>
                 </div>

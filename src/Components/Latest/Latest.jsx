@@ -5,7 +5,7 @@ import Spinner from "../Spinner/Spinner";
 import {useStore} from "../../Context/Context";
 
 const Latest = () => {
-    const {handlerReset, isLoading, stock, setSelectedCategory, selectedCategory} = useStore()
+    const {isLoading, stock, dispatch, selectedCategory} = useStore();
     return (
         <div className="container">
             <h2 className={styles.latest}>Our New Latest Arrival</h2>
@@ -13,23 +13,25 @@ const Latest = () => {
                 <div className="d-flex align-items-center gap-4">
                     <button
                         className={selectedCategory !== "/category/men's%20clothing" ? `${styles.filterBtn}` : `${styles.activeFilter}`}
-                        onClick={() => setSelectedCategory("/category/men's%20clothing")}> Men's
+                        onClick={() => dispatch({type: "filterData", payload: "/category/men's%20clothing"})}>
+                        Men's
                     </button>
                     <button
                         className={selectedCategory !== "/category/women's%20clothing" ? `${styles.filterBtn}` : `${styles.activeFilter}`}
-                        onClick={() => setSelectedCategory("/category/women's%20clothing")}> Women
+                        onClick={() => dispatch({type: "filterData", payload: "/category/women's%20clothing"})}> Women
                     </button>
                     <button
                         className={selectedCategory !== "/category/jewelery" ? `${styles.filterBtn}` : `${styles.activeFilter}`}
-                        onClick={() => setSelectedCategory("/category/jewelery")}> Jewelery
+                        onClick={() => dispatch({type: "filterData", payload: "/category/jewelery"})}> Jewelery
                     </button>
                     <button
                         className={selectedCategory !== "/category/electronics" ? `${styles.filterBtn}` : `${styles.activeFilter}`}
-                        onClick={() => setSelectedCategory("/category/electronics")}> Electronics
+                        onClick={() => dispatch({type: "filterData", payload: "/category/electronics"})}> Electronics
                     </button>
 
                 </div>
-                <button className={styles.resetBtn} disabled={!selectedCategory} onClick={() => handlerReset()}> Reset
+                <button className={styles.resetBtn} disabled={!selectedCategory} onClick={()=>dispatch({type: "resetFilter", payload: ""})} >
+                    Reset
                     Filter
                 </button>
             </div>

@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import {useStore} from "../../../Context/Context";
 
 const LatestItem = ({stocks}) => {
-    const {getItems} = useStore()
+    const {dispatch} = useStore()
     const cartItems =
         {
             id: stocks.id,
@@ -24,9 +24,7 @@ const LatestItem = ({stocks}) => {
             <div className="card-body bg-light text-center">
                 <p className="card-title">{stocks.title}</p>
                 <p className="card-text text-decoration-none fw-bold fs-5"> $ {stocks.price}</p>
-                <button className="btn cart-btn" onClick={() => {
-                    getItems(cartItems)
-                }}>Add to Cart
+                <button className="btn cart-btn" onClick={() => dispatch({type: "cartItems", payload: cartItems})}>Add to Cart
                 </button>
             </div>
 
