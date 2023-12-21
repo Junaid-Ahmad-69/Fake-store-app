@@ -1,3 +1,6 @@
+![Screenshot from 2023-12-21 19-30-59](https://github.com/Junaid-Ahmad-69/13-udemy-Fake-store/assets/85307602/cc156054-211c-40de-b508-040438698c45)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
